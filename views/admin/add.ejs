@@ -1,0 +1,48 @@
+<%- include("header") -%>
+
+    <div>
+        <form class="row g-3" action="/addNewPatient" method="post">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" name="fName" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" name="lName" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" id="validationDefault03" name="number" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Age</label>
+                <input type="text" class="form-control" id="validationDefault04" name="age" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Gender</label>
+                <select class="form-select" id="validationDefault05" name="gender" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault06" class="form-label">Examine Date</label>
+                <input type="date" class="form-control" id="validationDefault06" name="eDate" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault07" class="form-label">Next Visit Date</label>
+                <input type="date" class="form-control" id="validationDefault07" name="nDate" required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault08" class="form-label">Diagnosis</label>
+                <input type="text" class="form-control" id="validationDefault08" name="diagnosis" required>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include("footer") -%>
+

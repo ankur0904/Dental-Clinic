@@ -1,0 +1,64 @@
+<%- include("header") -%>
+
+    <body>
+        <div class="registration-form-page">
+            <div class="container mt-5 mb-5 d-flex justify-content-center">
+                <div class="card px-1 py-4">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title mb-3 my-appointment-heading" style="font-size: 40px;">Quote a smile
+                            </h6>
+                        </center>
+
+                        <center>
+                            <h6 class="information mt-4" style="font-size: 18px">Please fill the form</h6>
+                        </center>
+                        <form action="/appointment" id="book-appointment" method="post">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="input-group my-2"> <input class="form-control" type="text"
+                                                name="name" placeholder="Name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="input-group my-2"> <input class="form-control" type="text"
+                                                name="email" placeholder="Email ID"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div class="input-group my-2">
+                                            <select name="location" id="location" class="form-control">
+                                                <option value="Select-1">Select-1</option>
+                                                <option value="Select-2">Select-2</option>
+                                                <option value="Select-3">Select-3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" form="book-appointment"
+                                class="btn btn-primary btn-block confirm-button my-appointment-button">
+                                Quote
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+    </div>
+
+
+
+
+
+
+    <%- include("footer") -%>

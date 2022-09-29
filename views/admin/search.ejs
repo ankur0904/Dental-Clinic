@@ -1,0 +1,75 @@
+<%- include("header") -%>
+  <h6>Currently only for pc view</h6>
+  <div>
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Contact Number</th>
+          <th scope="col">Age</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Examine Date</th>
+          <th scope="col">Next Visit Date</th>
+          <th scope="col">Diagnosis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% patientDataAll.forEach(function(item){ %>
+          <tr>
+
+            <td>
+              <%= item.fName %>
+            </td>
+            <td>
+              <%= item.lName %>
+            </td>
+            <td>
+              <%= item.contactNumber %>
+            </td>
+            <td>
+              <%= item.age %>
+            </td>
+            <td>
+              <%= item.gender %>
+            </td>
+            <td>
+              <%= item.examineDate %>
+            </td>
+            <td>
+              <%= item.nextVisitDate %>
+            </td>
+            <td>
+              <%= item.diagnosis %>
+            </td>
+          </tr>
+          <% }) %>
+      </tbody>
+    </table>
+    </table>
+  </div>
+  <div class="foot" style="margin-top: 300px;">
+    <section class="footer">
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/">Services</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+      </ul>
+      <p class="copyright">Patel Dentals &copy; <%= new Date().getFullYear() %>
+      </p>
+      <p class="copyright">Designed By-YA</p>
+    </section>
+  </div>
+  </body>
+  </html>
